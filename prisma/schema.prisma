@@ -1,23 +1,20 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-    provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Warrior {
   id        Int      @id @default(autoincrement())
   name      String
   isEvil    Boolean  @default(false)
-  race      String   // e.g., Elf, Orc, Human, etc.
-  skill     String?  // e.g., Archery, Swordsmanship, Magic, etc.
-  age      Int?
-  imageUrl  String   @default("/assets/default-warrior.png") 
+  race      String
+  skill     String?
+  imageUrl  String   @default("/assets/default-warrior.png")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  age       Int?
 }
