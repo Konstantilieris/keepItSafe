@@ -2,9 +2,7 @@
 import { useFellowshipStore } from "@/stores/fellowshipStore";
 import React from "react";
 
-const page = () => {
-  const fellowshipStore = useFellowshipStore();
-
+const Page = () => {
   return (
     <div className="flex min-h-screen justify-center items-center px-4">
       <div className="text-4xl font-iceland text-light-900 text-center ">
@@ -15,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
