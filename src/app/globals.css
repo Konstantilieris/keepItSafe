@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.hover-effect {
+  background-color: #000000; /* Initial color */
+  transition: background-color 2s ease-out; /* Smooth transition for hover-out */
+}
+.hover-effect:hover,
+.hover-effect:active {
+  background-color: #7f1d1d; /* Hover color */
+  transition: background-color 0s; /* Remove transition on hover-in */
+}
