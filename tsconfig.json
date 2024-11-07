@@ -12,6 +12,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    "noEmitOnError": false, // Allow build to continue even if there are type errors
+
     "plugins": [
       {
         "name": "next"

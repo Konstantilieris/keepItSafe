@@ -7,7 +7,6 @@ import {
   IconSquareRoundedPlusFilled,
 } from "@tabler/icons-react";
 
-import Link from "next/link";
 import { useFellowshipStore } from "@/stores/fellowshipStore";
 interface Warrior {
   id: number;
