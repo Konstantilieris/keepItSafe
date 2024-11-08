@@ -13,6 +13,12 @@
     --foreground: #ededed;
   }
 }
+@media (hover: none) {
+  html,
+  body {
+    overscroll-behavior: none;
+  }
+}
 
 body {
   color: var(--foreground);

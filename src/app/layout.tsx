@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased relative  ${fontNunito.variable} ${iceland.variable}  flex h-full w-full  items-center max-md:overscroll-none bg-dark-100`}
+        className={` antialiased relative  ${fontNunito.variable} ${iceland.variable}  flex h-full w-full  items-center bg-dark-100`}
       >
         <Provider>
           {children}
